@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2DFA0"
+    android:backgroundTintMode="add">
+
+    <TextView
+      android:id="@+id/questionTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:backgroundTint="#AA7777"
+      android:backgroundTintMode="add"
+      android:text="Divirta-se, monte sua rotina diária!"
+      android:textAlignment="center"
+      android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+      android:textColor="#8940BF"
+      android:textSize="20dp"
+      android:textStyle="bold|italic"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+      android:id="@+id/buttonAlmoco"
+      android:layout_width="219dp"
+      android:layout_height="56dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="20dp"
+      android:background="#03AA7777"
+      android:contentDescription="almoco"
+      android:src="@drawable/almoco"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/questionTextView" />
+
+    <ImageButton
+      android:id="@+id/buttonBanheiro"
+      android:layout_width="217dp"
+      android:layout_height="57dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:background="#00FFFFFF"
+      android:contentDescription="banheiro"
+      android:src="@drawable/banheiro"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/buttonAlmoco" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
