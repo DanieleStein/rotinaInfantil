@@ -1,59 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+  <!-- TODO: Update blank fragment layout -->
   <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D2DFA0"
-    android:backgroundTintMode="add">
+    android:background="#D2DFA0">
 
     <TextView
       android:id="@+id/questionTextView"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
       android:layout_marginTop="20dp"
-      android:backgroundTint="#AA7777"
-      android:backgroundTintMode="add"
+      android:layout_marginEnd="8dp"
       android:text="Divirta-se, monte sua rotina diária!"
       android:textAlignment="center"
-      android:textAppearance="@style/TextAppearance.AppCompat.Medium"
       android:textColor="#8940BF"
-      android:textSize="20dp"
-      android:textStyle="bold|italic"
+      android:textSize="26dp"
+      android:textStyle="bold"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-      android:id="@+id/buttonBanheiro"
-      android:layout_width="177dp"
-      android:layout_height="63dp"
+    <TextView
+      android:id="@+id/textEscolha"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
       android:layout_marginStart="16dp"
-      android:layout_marginTop="20dp"
-      android:backgroundTint="#00FFFFFF"
-      android:contentDescription="banheiro"
-      android:src="@drawable/banheiro"
+      android:layout_marginTop="8dp"
+      android:text="Escolha uma atividade:"
+      android:textSize="20sp"
+      android:textStyle="bold"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/questionTextView" />
 
-    <ImageButton
-      android:id="@+id/buttonDentes"
+    <RadioGroup
+      android:id="@+id/radioGroup"
       android:layout_width="wrap_content"
-      android:layout_height="63dp"
+      android:layout_height="wrap_content"
       android:layout_marginStart="16dp"
-      android:layout_marginTop="5dp"
-      android:backgroundTint="#00FFFFFF"
-      android:contentDescription="dentes"
-      android:src="@drawable/dentes"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/buttonBanheiro" />
+      app:layout_constraintTop_toBottomOf="@id/textEscolha">
+
+      <RadioButton
+        android:id="@+id/radioBanheiro"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#00FFFFFF"
+        android:drawableLeft="@drawable/banheiro22"
+        android:drawableTint="@color/white"
+        android:text="Ir ao banheiro"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+      <RadioButton
+        android:id="@+id/radioTomarBanho"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#00FFFFFF"
+        android:drawableLeft="@drawable/banheiro22"
+        android:drawableTint="@color/white"
+        android:text="Tomar banho"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+      <RadioButton
+        android:id="@+id/radioEscovarDentes"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#00FFFFFF"
+        android:drawableLeft="@drawable/banheiro22"
+        android:drawableTint="@color/white"
+        android:text="Escovar os dentes"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    </RadioGroup>
 
   </androidx.constraintlayout.widget.ConstraintLayout>
 
-</FrameLayout>
+</ScrollView>
