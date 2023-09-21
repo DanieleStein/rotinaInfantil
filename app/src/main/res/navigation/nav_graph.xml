@@ -10,4 +10,9 @@
     android:name="br.com.rotinainfantil.HomeFragment"
     android:label="fragment_home"
     tools:layout="@layout/fragment_home" />
+  <fragment
+    android:id="@+id/confirmationFragment"
+    android:name="br.com.rotinainfantil.ConfirmationFragment"
+    android:label="fragment_confirmation"
+    tools:layout="@layout/fragment_confirmation" />
 </navigation>
