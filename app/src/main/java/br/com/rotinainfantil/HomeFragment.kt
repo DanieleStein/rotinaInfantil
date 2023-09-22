@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.RadioButton
+import android.widget.RadioGroup
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
@@ -38,8 +40,11 @@ class HomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
       val view = inflater.inflate(R.layout.fragment_home, container, false)
-      view.findViewById<FloatingActionButton>(R.id.floatingActionButton3).setOnClickListener {
-        findNavController().navigate(R.id.action_homeFragment_to_confirmationFragment)
+      view.findViewById<Button>(R.id.buttonOk).setOnClickListener {
+        val stack = view.findViewById<RadioButton>(view.findViewById<RadioGroup>(R.id.radioGroup)
+          .checkedRadioButtonId).text as String
+        val action = HomeFragmentDirections.actionHomeFragmentToConfirmationFragment(stack)
+        findNavController().navigate(action)
       }
       return view
     }
