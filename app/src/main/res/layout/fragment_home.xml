@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
+  android:background="#D2DFA0"
   tools:context=".HomeFragment">
-
-  <!-- TODO: Update blank fragment layout -->
-  <androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#D2DFA0">
 
     <TextView
       android:id="@+id/questionTextView"
@@ -40,214 +35,213 @@
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/questionTextView" />
 
-    <RadioGroup
-      android:id="@+id/radioGroup"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginStart="16dp"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@id/textEscolha">
 
-      <RadioButton
-        android:id="@+id/radioBanheiro"
-        android:layout_width="250dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="#00FFFFFF"
-        android:drawableLeft="@drawable/banheiro22"
-        android:drawableTint="@color/white"
-        android:text="Ir ao banheiro"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+  <RadioGroup
+    android:id="@+id/radioGroup"
+    android:layout_width="match_parent"
+    android:layout_height="1299dp"
+    android:layout_marginStart="16dp"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/textEscolha">
 
-      <RadioButton
-        android:id="@+id/radioTomarBanho"
-        android:layout_width="250dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
-        android:backgroundTint="#00FFFFFF"
-        android:drawableLeft="@drawable/banheiro22"
-        android:drawableTint="@color/white"
-        android:text="Tomar banho"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+    <RadioButton
+      android:id="@+id/radioBanheiro"
+      android:layout_width="250dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="20dp"
+      android:backgroundTint="#00FFFFFF"
+      android:drawableLeft="@drawable/banheiro22"
+      android:drawableTint="@color/white"
+      android:text="Ir ao banheiro"
+      android:textColor="@color/white"
+      android:textSize="16sp"
+      android:textStyle="bold" />
 
-      <RadioButton
-        android:id="@+id/radioEscovarDentes"
-        android:layout_width="250dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
-        android:backgroundTint="#00FFFFFF"
-        android:drawableLeft="@drawable/banheiro22"
-        android:drawableTint="@color/white"
-        android:text="Escovar os dentes"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+    <RadioButton
+      android:id="@+id/radioTomarBanho"
+      android:layout_width="250dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="5dp"
+      android:backgroundTint="#00FFFFFF"
+      android:drawableLeft="@drawable/banheiro22"
+      android:drawableTint="@color/white"
+      android:text="Tomar banho"
+      android:textColor="@color/white"
+      android:textSize="16sp"
+      android:textStyle="bold" />
 
-      <RadioButton
-        android:id="@+id/radioJantar"
-        android:layout_width="250dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
-        android:backgroundTint="#00FFFFFF"
-        android:drawableLeft="@drawable/banheiro22"
-        android:drawableTint="@color/white"
-        android:text="Jantar"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+    <RadioButton
+      android:id="@+id/radioEscovarDentes"
+      android:layout_width="250dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="5dp"
+      android:backgroundTint="#00FFFFFF"
+      android:drawableLeft="@drawable/banheiro22"
+      android:drawableTint="@color/white"
+      android:text="Escovar os dentes"
+      android:textColor="@color/white"
+      android:textSize="16sp"
+      android:textStyle="bold" />
 
-      <RadioButton
-        android:id="@+id/radioAlmocar"
-        android:layout_width="250dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
-        android:backgroundTint="#00FFFFFF"
-        android:drawableLeft="@drawable/banheiro22"
-        android:drawableTint="@color/white"
-        android:text="Almoçar"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+    <RadioButton
+      android:id="@+id/radioJantar"
+      android:layout_width="250dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="5dp"
+      android:backgroundTint="#00FFFFFF"
+      android:drawableLeft="@drawable/banheiro22"
+      android:drawableTint="@color/white"
+      android:text="Jantar"
+      android:textColor="@color/white"
+      android:textSize="16sp"
+      android:textStyle="bold" />
 
-      <RadioButton
-        android:id="@+id/radioCafe"
-        android:layout_width="250dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
-        android:backgroundTint="#00FFFFFF"
-        android:drawableLeft="@drawable/banheiro22"
-        android:drawableTint="@color/white"
-        android:text="Tomar café"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+    <RadioButton
+      android:id="@+id/radioAlmocar"
+      android:layout_width="250dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="5dp"
+      android:backgroundTint="#00FFFFFF"
+      android:drawableLeft="@drawable/banheiro22"
+      android:drawableTint="@color/white"
+      android:text="Almoçar"
+      android:textColor="@color/white"
+      android:textSize="16sp"
+      android:textStyle="bold" />
 
-      <RadioButton
-        android:id="@+id/radioBrincar"
-        android:layout_width="250dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
-        android:backgroundTint="#00FFFFFF"
-        android:drawableLeft="@drawable/banheiro22"
-        android:drawableTint="@color/white"
-        android:text="Brincar"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+    <RadioButton
+      android:id="@+id/radioCafe"
+      android:layout_width="250dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="5dp"
+      android:backgroundTint="#00FFFFFF"
+      android:drawableLeft="@drawable/banheiro22"
+      android:drawableTint="@color/white"
+      android:text="Tomar café"
+      android:textColor="@color/white"
+      android:textSize="16sp"
+      android:textStyle="bold" />
 
-      <RadioButton
-        android:id="@+id/radioGuardarBrinq"
-        android:layout_width="280dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
-        android:backgroundTint="#00FFFFFF"
-        android:drawableLeft="@drawable/banheiro22"
-        android:drawableTint="@color/white"
-        android:text="Guardar os brinquedos"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+    <RadioButton
+      android:id="@+id/radioBrincar"
+      android:layout_width="250dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="5dp"
+      android:backgroundTint="#00FFFFFF"
+      android:drawableLeft="@drawable/banheiro22"
+      android:drawableTint="@color/white"
+      android:text="Brincar"
+      android:textColor="@color/white"
+      android:textSize="16sp"
+      android:textStyle="bold" />
 
-      <RadioButton
-        android:id="@+id/radioDormir"
-        android:layout_width="250dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
-        android:backgroundTint="#00FFFFFF"
-        android:drawableLeft="@drawable/banheiro22"
-        android:drawableTint="@color/white"
-        android:text="Dormir"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+    <RadioButton
+      android:id="@+id/radioGuardarBrinq"
+      android:layout_width="280dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="5dp"
+      android:backgroundTint="#00FFFFFF"
+      android:drawableLeft="@drawable/banheiro22"
+      android:drawableTint="@color/white"
+      android:text="Guardar os brinquedos"
+      android:textColor="@color/white"
+      android:textSize="16sp"
+      android:textStyle="bold" />
 
-      <RadioButton
-        android:id="@+id/radioOracao"
-        android:layout_width="250dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
-        android:backgroundTint="#00FFFFFF"
-        android:drawableLeft="@drawable/banheiro22"
-        android:drawableTint="@color/white"
-        android:text="Fazer oração"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+    <RadioButton
+      android:id="@+id/radioDormir"
+      android:layout_width="250dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="5dp"
+      android:backgroundTint="#00FFFFFF"
+      android:drawableLeft="@drawable/banheiro22"
+      android:drawableTint="@color/white"
+      android:text="Dormir"
+      android:textColor="@color/white"
+      android:textSize="16sp"
+      android:textStyle="bold" />
 
-      <RadioButton
-        android:id="@+id/radioHistoria"
-        android:layout_width="250dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
-        android:backgroundTint="#00FFFFFF"
-        android:drawableLeft="@drawable/banheiro22"
-        android:drawableTint="@color/white"
-        android:text="Ler uma história"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+    <RadioButton
+      android:id="@+id/radioOracao"
+      android:layout_width="250dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="5dp"
+      android:backgroundTint="#00FFFFFF"
+      android:drawableLeft="@drawable/banheiro22"
+      android:drawableTint="@color/white"
+      android:text="Fazer oração"
+      android:textColor="@color/white"
+      android:textSize="16sp"
+      android:textStyle="bold" />
 
-      <RadioButton
-        android:id="@+id/radioBale"
-        android:layout_width="250dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
-        android:backgroundTint="#00FFFFFF"
-        android:drawableLeft="@drawable/banheiro22"
-        android:drawableTint="@color/white"
-        android:text="Ir ao balé"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+    <RadioButton
+      android:id="@+id/radioHistoria"
+      android:layout_width="250dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="5dp"
+      android:backgroundTint="#00FFFFFF"
+      android:drawableLeft="@drawable/banheiro22"
+      android:drawableTint="@color/white"
+      android:text="Ler uma história"
+      android:textColor="@color/white"
+      android:textSize="16sp"
+      android:textStyle="bold" />
 
-      <RadioButton
-        android:id="@+id/radioFutebol"
-        android:layout_width="250dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
-        android:backgroundTint="#00FFFFFF"
-        android:drawableLeft="@drawable/banheiro22"
-        android:drawableTint="@color/white"
-        android:text="Ir ao futebol"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+    <RadioButton
+      android:id="@+id/radioBale"
+      android:layout_width="250dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="5dp"
+      android:backgroundTint="#00FFFFFF"
+      android:drawableLeft="@drawable/banheiro22"
+      android:drawableTint="@color/white"
+      android:text="Ir ao balé"
+      android:textColor="@color/white"
+      android:textSize="16sp"
+      android:textStyle="bold" />
 
-    </RadioGroup>
+    <RadioButton
+      android:id="@+id/radioFutebol"
+      android:layout_width="250dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="5dp"
+      android:backgroundTint="#00FFFFFF"
+      android:drawableLeft="@drawable/banheiro22"
+      android:drawableTint="@color/white"
+      android:text="Ir ao futebol"
+      android:textColor="@color/white"
+      android:textSize="16sp"
+      android:textStyle="bold" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+  </RadioGroup>
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
       android:id="@+id/floatingActionButton3"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginEnd="20dp"
-      android:layout_marginBottom="30dp"
-      android:clickable="true"
-      android:contentDescription="ok"
+      android:layout_gravity="bottom|right"
+      android:layout_margin="16dp"
       android:backgroundTint="@color/purple"
-      android:hapticFeedbackEnabled="false"
+      android:contentDescription="@string/app_name"
       android:src="@drawable/baseline_check_24"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent" />
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
 
-</ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
