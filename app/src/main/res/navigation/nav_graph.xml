@@ -18,5 +18,12 @@
     android:id="@+id/confirmationFragment"
     android:name="br.com.rotinainfantil.ConfirmationFragment"
     android:label="fragment_confirmation"
-    tools:layout="@layout/fragment_confirmation" />
+    tools:layout="@layout/fragment_confirmation" >
+    <argument
+      android:name="stack"
+      app:argType="string" />
+    <action
+      android:id="@+id/action_confirmationFragment_to_homeFragment"
+      app:destination="@id/homeFragment" />
+  </fragment>
 </navigation>
